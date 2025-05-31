@@ -97,6 +97,33 @@ button#btn-login:hover{
     background-color: #3e8b40
 }
 
+#error{
+    color: red;
+    position: relative;
+    left: 20px;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-name: none;
+    display: none ;
+}
+
+@keyframes errorAnim {
+    0%{
+        transform: translateX(0px);
+    }
+    40%{
+        transform: translateX(-10px);
+    }
+    80%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
 @keyframes SouGerenciador {
     from{
         left: 50vw;
@@ -118,14 +145,9 @@ button#btn-login:hover{
 
 
 
-/*config para celulares*/
+/*/////////////////////////////////////////////////////config para celulares/////////////////////////////////////////////////////////*/
 
 @media (max-width: 600px){
-
-html, body {
-    height: 100%; /* Garantir que o body ocupe toda a altura da janela */
-    padding-bottom: 20px; /* Espaço extra no final */
-}
 
 input{
     width: 90%;
@@ -137,10 +159,14 @@ input{
     font-size: 15px;
     outline: none;
     border: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 button#btn-login{
     position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: 90%;
     height: 40px;
     border-radius: 30px; 
@@ -195,6 +221,15 @@ button#btn-login{
     left: 0;
 }
 
+@keyframes subirIntro {
+    from{
+        top: 50vh;
+    }
+    to{
+        top: 30vh;
+    }
+}
+
 @keyframes SouGerenciadorCel {
     from{
         opacity: 0;
@@ -203,7 +238,8 @@ button#btn-login{
     
     to{
         opacity: 1;
-        top: 100vh;
+        top: 75vh;
+
 }
 }
 
