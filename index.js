@@ -12,13 +12,20 @@ function SouGerenciador(){
         loginDiag.show()
         loginDiag.style.animationName = "fadeIn"
     }else{
+
+
+        let intro = document.getElementsByClassName("intro")[0]
+        intro.style.animationName = "subirIntro"
+
+
         loginDiag = document.getElementsByClassName("login-container")[0]
         loginDiag.show()
         loginDiag.style.animationName = "SouGerenciadorCel"
+
+        document.documentElement.style.height = "100%";
+        document.documentElement.style.padding = "50px";
 }
 }
-
-
 
 
 function login(){
@@ -27,11 +34,14 @@ function login(){
     
     if (email.value == "Richard_4663" && senha.value == "123456"){
         localStorage.setItem("autorizado", "sim")
-        alert("prossiga, grande lenda!")
         window.location.href = "home.html"
     }
     else{
-        alert("usuário ou senha incorretos!")
+        
+        let error = document.getElementById("error")
+
+        error.style.display = "block"
+        error.style.animationName = "errorAnim"
+
     }
 }
-
