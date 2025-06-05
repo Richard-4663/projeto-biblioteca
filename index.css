@@ -127,11 +127,13 @@ button#btn-login:hover{
 @keyframes SouGerenciador {
     from{
         left: 50vw;
+        width: 44%;
     }
     
     to{
-        left: 30vw;
-        width: 40%;
+        left: 25vw;
+        width: 30%;
+        text-align: left;
 }
 }
 
@@ -264,4 +266,3 @@ button#btn-login{
     display: none;
     pointer-events: none;
 }
-
