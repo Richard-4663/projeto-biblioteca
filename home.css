@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 0.5rem 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #4CAF50;
+}
+
+.container {
+    margin: 3%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(auto-fit, max(350px));
+    gap: 40px;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+    transition: transform 0.3s ease;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 90%;
+    height: 250px;
+    padding: 10px;
+}
+
+
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 20px;
+}
+
+.card-content p {
+    font-size: 1rem;
+    color: #666;
+    font-family: roboto-condensed;
+}
+
+.card .editar-class{
+    position: relative;
+    color: black;
+    font-size: 15px;
+    top: 10px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.footer p {
+    font-size: 0.9rem;
+}
+
+#search-input {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#sair{
+    position: absolute;
+    padding: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: 19px;
+    right: 2em;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.0);
+    transition: 0.3s;
+}
+
+#sair:hover{
+    border: 1px solid rgba(0, 0, 0, 1);
+    background-color: #034611;
+    cursor: pointer;
+}
+
+.all-books{
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card a.editar-class i {
+    position: relative;
+    margin-right: 6px;
+}
+
+.card a.editar-class {
+    text-decoration: none;
+    transition: transform 0.3s;
+    display: inline-flex;
+    align-items: center;
+}
+
+.card a.editar-class:hover {
+    transform: scale(1.1);
+}

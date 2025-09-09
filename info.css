@@ -1,0 +1,198 @@
+:root{
+    --cortema: #4CAF50;
+    --corhover:#0f7915; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--cortema);
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 0.5rem 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--corhover);
+}
+
+
+.card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+    transition: transform 0.3s ease;
+    text-align: left;
+    overflow: hidden;
+    left: 50vw;
+    transform: translate(-50%, 0);
+    width: 70%;
+}
+
+.card img {
+    width: 90%;
+    padding: 10px;
+}
+
+
+
+.card-content {
+    position: relative;
+    padding: 1rem;
+    align-content: center ;
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 20px;
+}
+
+.card-content p {
+    font-size: 1.5rem;
+    color: #000000;
+    font-family: roboto-condensed;
+}
+
+.card-content a{
+    position: relative;
+    color: black;
+    font-size: 15px;
+    top: 10px;
+}
+
+.footer {
+    position: fixed;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    font-size: 0.9rem;
+}
+
+
+#sair{
+    position: absolute;
+    padding: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: 19px;
+    right: 2em;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.0);
+    transition: 0.3s;
+}
+
+#sair:hover{
+    border: 1px solid rgba(0, 0, 0, 1);
+    background-color: var(--corhover);
+    cursor: pointer;
+}
+
+
+.quant_liv{
+    margin-top: 10px;
+}
+
+.custom-number-input {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.custom-number-input input {
+  width: 60px;
+  text-align: center;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.custom-number-input button {
+  font-size: 20px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: var(--cortema);
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.custom-number-input button:hover {
+  background-color: var(--corhover);
+}
+
+input{
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid black;
+    outline: none;
+    letter-spacing: 1px;
+    width: 100%;
+    margin: 5px;
+}
+
+select{
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.btn-save-book{
+    padding: 10px;
+    width: 60%;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--cortema);
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+    left: 20%;
+}
+
+.btn-save-book:hover{
+    background-color: var(--corhover);
+}

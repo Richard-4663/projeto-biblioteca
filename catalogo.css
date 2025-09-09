@@ -1,0 +1,92 @@
+:root{
+    --cortema: #4CAF50;
+    --corhover:#0f7915; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 0.5rem 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #4CAF50;
+}
+
+#sair{
+    position: absolute;
+    padding: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: 19px;
+    right: 2em;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.0);
+    transition: 0.3s;
+}
+
+#sair:hover{
+    border: 1px solid rgba(0, 0, 0, 1);
+    background-color: #034611;
+    cursor: pointer;
+}
+
+.card{
+    position: relative;
+    padding: 20px;
+    border: none;
+    background-color: var(--cortema);
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.3s;
+    border: 1px solid black;
+    background-image: url(card_img.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+
+.container{
+    margin: 3%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+}
