@@ -97,7 +97,7 @@ nav a:hover {
 }
 
 .footer {
-    position: absolute;
+    position: relative;
     background-color: #333;
     color: white;
     text-align: center;
