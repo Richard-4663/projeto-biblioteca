@@ -1,0 +1,279 @@
+:root{
+    --cortema: #4CAF50;
+    --corhover:#0f7915; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: var(--cortema);
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    padding: 0.5rem 1rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    text-align: center;
+}
+
+nav a:hover{
+    color: var(--corhover);
+}
+
+nav .links {
+    display: flex;
+    gap: 2rem;
+}
+
+#sair {
+    position: absolute;
+    right: 1rem;  
+    padding: 5px 12px;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#sair i{
+    position: relative;
+    margin-left: 6px;
+    top: 2px;
+}
+
+#sair:hover {
+    border: 1px solid rgba(0, 0, 0, 1);
+    background-color: #034611;
+}
+
+
+
+.card {
+    position: relative;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+    transition: transform 0.3s ease;
+    text-align: left;
+    left: 50vw;
+    transform: translate(-50%, 0);
+    width: 70%;
+    flex: 1;
+}
+
+.card img {
+    width: 90%;
+    padding: 10px;
+}
+
+
+
+.card-content {
+    position: relative;
+    padding: 1rem;
+    align-content: center ;
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 20px;
+}
+
+.card-content p {
+    font-size: 1.5rem;
+    color: #000000;
+    font-family: roboto-condensed;
+}
+
+.card-content a{
+    position: relative;
+    color: black;
+    font-size: 15px;
+    top: 10px;
+}
+
+.footer {
+    position: relative;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    font-size: 0.9rem;
+}
+
+#sair:hover{
+    border: 1px solid rgba(0, 0, 0, 1);
+    background-color: var(--corhover);
+    cursor: pointer;
+}
+
+
+.quant_liv{
+    margin-top: 10px;
+}
+
+.custom-number-input {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.custom-number-input input {
+  width: 60px;
+  text-align: center;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.custom-number-input button {
+  font-size: 20px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: var(--cortema);
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.custom-number-input button:hover {
+  background-color: var(--corhover);
+}
+
+input{
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid black;
+    outline: none;
+    letter-spacing: 1px;
+    width: 100%;
+    margin: 5px;
+}
+
+select{
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.btn-save-book, .excluir-btn{
+    padding: 10px;
+    width: 60%;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--cortema);
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+    left: 20%;
+}
+
+.btn-save-book:hover{
+    background-color: var(--corhover);
+}
+
+#ipt-id{
+    pointer-events: none
+}
+
+.excluir-btn{
+    color: black; 
+    background-color: rgba(255, 0, 0, 0.5); 
+    margin-top: 5px;
+}
+
+.excluir-btn:hover{
+    background-color: rgba(117, 1, 1, 0.692); ;
+}
+
+.contato{
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 30px;
+    position: absolute;
+    left: 50vw;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: #fff;
+    overflow: hidden;
+    width: 550px;
+    text-align: center;
+}
+
+
+.contato .title {
+    font-size: 27px;
+    color: #000;
+    font-weight: bold;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    margin: 10px;
+}   
+
+.contato a {
+    display: block;
+    padding: 10px 15px;
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+    text-align: left;
+}   
+
+.contato a:hover {
+    background-color: #e2e2e2;
+}
+
+#sair-dialog{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}

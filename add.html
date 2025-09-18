@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+    <link rel="stylesheet" href="editar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+
+    <header>
+        <h1>Bem-vindo à sala de leitura</h1>
+    </header>
+    <nav>
+        <div class="links">
+        <a href="home.html">Página inicial</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="sobre.html">Sobre</a>
+        <a style="cursor: pointer;" onclick="abrirContact()">Contato</a>
+        </div>
+        <button id="sair" onclick="sair()">sair<i class='bxr  bx-door-open'></i></button>
+    </nav>
+
+        <div class="card">            
+            <div class="card-content">
+                <h1>Adicionar livro</h1>
+                <form id="form" action="home.html" method="GET">
+                    <p><b>Titulo:</b></p><input type="text" name="titulo" id="titulo" placeholder="digite aqui o titulo do livro">
+                    <p><b>Autor:</b></p><input type="text" name="autor" id="autor" placeholder="digite aqui o autor do livro">
+
+                    <p><b>Gênero:</b></p>
+                    <select name="genero" name="genero" id="genero">
+                      <option value="matematica">Matemática</option>
+                      <option value="educacao-fisica">Educação Física</option>
+                      <option value="psicologia">Psicologia</option>
+                      <option value="pedagogia">Pedagogia</option>
+                      <option value="lingua-portuguesa">Língua Portuguesa</option>
+                      <option value="historia">História</option>
+                      <option value="fisica">Física</option>
+                      <option value="ciencias">Ciências</option>
+                      <option value="quimica">Química</option>
+                      <option value="filosofia">Filosofia</option>
+                      <option value="geografia">Geografia</option>
+                      <option value="dicionarios">Dicionários</option>
+                      <option value="meio-ambiente">Meio Ambiente</option>
+                      <option value="contos">Contos</option>
+                      <option value="romance">Romance</option>
+                      <option value="literatura">Literatura</option>
+                      <option value="quadrinhos">Quadrinhos</option>
+                      <option value="biografias">Biografias</option>
+                      <option value="projeto">Projeto</option>
+                      <option value="cronicas">Crônicas</option>
+                      <option value="novela">Novela</option>
+                      <option value="poesia">Poesia</option>
+                      <option value="ficcao-cientifica">Ficção Científica</option>
+                      <option value="ficcao-policial">Ficção Policial</option>
+                      <option value="infanto-juvenil">Infantojuvenil</option>
+                      <option value="classico-para-jovens">Clássico para Jovens</option>
+                      <option value="teatro-e-cinema">Teatro e Cinema</option>
+                      <option value="grandes-pensadores">Grandes Pensadores</option>
+                    </select>
+
+                    <p><b>Sinopse: </b></p><input type="text" name="sinopse" id="sinopse" placeholder="digite aqui a sinopse do livro">
+                    <p class="quant_liv">Quantidade de livros:</p>
+                    
+                    
+                    <div class="custom-number-input">
+                      <button type="button" onclick="decrement()">−</button>
+                      <input type="number" name="quantidade" id="quantidade" value="0" min="0" max="10">
+                      <button type="button" onclick="increment()">+</button>
+                    </div><br>
+
+                    <input id="ipt-id" type="text" name="ID" placeholder="ID automático">
+
+                    <button type="submit" id="btn-save-book" class="btn-save-book">Adicionar</button>
+
+                </form>
+               
+            </div>
+
+        </div>
+
+
+        <dialog class="contato">
+            <div class="title">Fale conosco</div>Dúvidas, sugestões, reclamações e elogios? Envie-nos um e-mail ou entre em contato via tel:<i onclick="fecharContact()" id="sair-dialog" class='bx  bx-x'  style='color:#030303'></i> 
+                <a href="mailto:richardrodriguesdossantosu@gmail.com" target="_blank"><i class='bxr  bx-envelope-open'  ></i> Email: richardrodriguesdossantosu@gmail.com</a>
+                <a href="https://whatsa.me/5511977019749/?t=Ol%C3%A1,%20vim%20pelo%20site%20da%20biblioteca%20e%20queria%20ter%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20livros" target="_blank"><i class='bx  bx-phone'  style='color:#030303'></i> </i> Whatsapp: (11) 97001-9749</a>
+                <a href="https://www.google.com/maps/dir//Av.+Bom+Clima,+556+-+Jardim+Bom+Clima,+Guarulhos+-+SP,+07196-220/@-23.4510545,-46.6002054,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94cef5309668258d:0xb4d29156950f5cd8!2m2!1d-46.517881!2d-23.4511462?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank"><i class='bxr  bx-location-alt'  style='color:#030303'></i> Endereço: Av. Bom Clima, 556 - Jardim Bom Clima, Guarulhos - SP, 07196-220
+                </a>
+    </dialog>
+
+         
+    <footer class="footer">
+        <p>&copy; 1h301h33 Biblioteca. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="add.js"></script>
+</body>
+</html>

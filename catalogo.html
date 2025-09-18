@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>catalogo</title>
+    <link rel="stylesheet" href="catalogo.css">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+
+    <header>
+        <h1>Bem-vindo à sala de leitura</h1>
+    </header>
+    <nav>
+        <div class="links">
+        <a href="home.html">Página inicial</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="sobre.html">Sobre</a>
+        <a style="cursor: pointer;" onclick="abrirContact()">Contato</a>
+        </div>
+        <button id="sair" onclick="sair()">sair<i class='bxr  bx-door-open'></i> </button>
+    </nav>
+
+    <div class="container">
+
+        <div class="card">
+            <h1>Matemática</h1>
+        </div>
+        
+        <div class="card">
+            <h1>Educação Física</h1>
+        </div>
+
+        <div class="card">
+            <h1>Psicologia</h1>
+        </div>
+
+        <div class="card">
+            <h1>Pedagogia</h1>
+        </div>
+
+        <div class="card">
+            <h1>Lingua portuguesa</h1>
+        </div>
+
+        <div class="card">
+            <h1>História</h1>
+        </div>
+
+        <div class="card">
+            <h1>Física</h1>
+        </div>
+
+        <div class="card">
+            <h1>Ciência</h1>
+        </div>
+
+        <div class="card">
+            <h1>Química</h1>
+        </div>
+
+        <div class="card">
+            <h1>Filosofia</h1>
+        </div>
+
+        <div class="card">
+            <h1>Geografia</h1>
+        </div>
+
+        <div class="card">
+            <h1>Grandes Pensadores</h1>
+        </div>
+
+        <div class="card">
+            <h1>Dicionários</h1>
+        </div>
+
+        <div class="card">
+            <h1>Meio Ambiente</h1>
+        </div>
+
+        <div class="card">
+            <h1>Teatro E Cinema</h1>
+        </div>
+
+        <div class="card">
+            <h1>Contos</h1>
+        </div>
+
+        <div class="card">
+            <h1>Romance</h1>
+        </div>
+
+        <div class="card">
+            <h1>Literatura</h1>
+        </div>
+
+        <div class="card">
+            <h1>HQ</h1>
+        </div>
+
+        <div class="card">
+            <h1>Mangá</h1>
+        </div>
+
+        <div class="card">
+            <h1>Biografia</h1>
+        </div>
+
+        <div class="card">
+            <h1>Projeto</h1>
+        </div>
+
+        <div class="card">
+            <h1>Crônica</h1>
+        </div>
+
+        <div class="card">
+            <h1>Novela</h1>
+        </div>
+
+        <div class="card">
+            <h1>Poesia</h1>
+        </div>
+
+        <div class="card">
+            <h1>Ficção Cientifica</h1>
+        </div>
+
+        <div class="card">
+            <h1>Ficção Policial</h1>
+        </div>
+
+        <div class="card">
+            <h1>Infanto Juvenil</h1>
+        </div>
+
+        <div class="card">
+            <h1>Clássico para Jovens</h1>
+        </div>
+
+
+    </div>
+
+    <dialog class="contato">
+        <div class="title">Fale conosco</div>Dúvidas, sugestões, reclamações e elogios? Envie-nos um e-mail ou entre em contato via tel:<i onclick="fecharContact()" id="sair-dialog" class='bx  bx-x'  style='color:#030303'></i> 
+        <a href="mailto:richardrodriguesdossantosu@gmail.com" target="_blank"><i class='bxr  bx-envelope-open'  ></i> Email: richardrodriguesdossantosu@gmail.com</a>
+        <a href="https://whatsa.me/5511977019749/?t=Ol%C3%A1,%20vim%20pelo%20site%20da%20biblioteca%20e%20queria%20ter%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20livros" target="_blank"><i class='bx  bx-phone'  style='color:#030303'></i> </i> Whatsapp: (11) 97001-9749</a>
+        <a href="https://www.google.com/maps/dir//Av.+Bom+Clima,+556+-+Jardim+Bom+Clima,+Guarulhos+-+SP,+07196-220/@-23.4510545,-46.6002054,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94cef5309668258d:0xb4d29156950f5cd8!2m2!1d-46.517881!2d-23.4511462?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank"><i class='bxr  bx-location-alt'  style='color:#030303'></i> Endereço: Av. Bom Clima, 556 - Jardim Bom Clima, Guarulhos - SP, 07196-220
+        </a>
+    </dialog>
+    
+</body>
+
+<script>
+    function abrirContact(){
+    const dialog = document.getElementsByClassName("contato")[0];
+    dialog.showModal();
+}
+
+function fecharContact(){
+    const dialog = document.getElementsByClassName("contato")[0];
+    dialog.close();
+}
+
+function sair(){
+    localStorage.removeItem("autorizado")
+    window.location.href = "index.html"
+}
+
+</script>
+
+</html>

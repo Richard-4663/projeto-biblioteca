@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+    <link rel="stylesheet" href="sobre.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <header>
+        <h1>Bem-vindo à sala de leitura</h1>
+    </header>
+    <nav>
+        <div class="links">
+        <a href="home.html">Página inicial</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="sobre.html">Sobre</a>
+        <a style="cursor: pointer;" onclick="abrirContact()">Contato</a>
+        </div>
+        <button id="sair" onclick="sair()">sair<i class='bxr  bx-door-open'></i></button>
+    </nav>
+
+    <div class="container">
+
+        <img width="70%" src="/projeto-biblioteca-main/banner-busca-acervo.jpg" alt="">
+
+        <h1>Sala de Leitura Padre Conrado: Um Mundo de Conhecimento e Descobertas</h1>
+        <p>A Sala de Leitura Padre Conrado é um espaço acolhedor e inspirador, dedicado a promover o prazer da leitura e o desenvolvimento do conhecimento. Coordenada pelos professores articuladores Elaine Rafael (manhã), Guilherme Leite (tarde) e Adriana Selim (noite), e sob a direção responsável de Maria de Fátima Cruz, a sala oferece um ambiente rico em livros, revistas e outros materiais de leitura para todos os gostos e idades.</p>
+
+        <h1>O que você encontra na Sala de Leitura?</h1>
+        <ul>
+            <li>Um acervo diversificado e atualizado, com obras literárias, informativas e de referência.</li>
+            <li>Um espaço tranquilo e agradável para leitura individual ou em grupo.</li>
+            <li>Atividades e projetos que estimulam o hábito da leitura e a criatividade.</li>
+            <li>Orientação e apoio dos é articuladores para suas pesquisas e estudos.</li>
+        </ul>
+
+        <h1>O Prazer da Leitura ao Seu Alcance</h1>
+        <p>Acreditamos que a leitura é uma ferramenta poderosa para transformar vidas, abrir horizontes e construir um futuro melhor. Na Sala de Leitura Padre Conrado, você terá a oportunidade de:</p>
+
+        <ul>
+            <li>Viajar para outros mundos e épocas através dos livros.</li>
+            <li>Aprender sobre diferentes culturas e realidades.</li>
+            <li>Descobrir o prazer de se perder em uma boa história.</li>
+            <li>Desenvolver o pensamento crítico e a capacidade de expressão.</li>
+            <li>Ampliar seu vocabulário e aprimorar sua escrita.</li>
+        </ul>
+        
+        <h1>Venha Conhecer!</h1>
+        <p>A Sala de Leitura Padre Conrado está de portas abertas para receber você! Visite-nos e descubra um universo de possibilidades.</p>
+
+    </div>
+
+    <dialog class="contato">
+        <div class="title">Fale conosco</div>Dúvidas, sugestões, reclamações e elogios? Envie-nos um e-mail ou entre em contato via tel:<i onclick="fecharContact()" id="sair-dialog" class='bx  bx-x'  style='color:#030303'></i> 
+        <a href="mailto:richardrodriguesdossantosu@gmail.com" target="_blank"><i class='bxr  bx-envelope-open'  ></i> Email: richardrodriguesdossantosu@gmail.com</a>
+        <a href="https://whatsa.me/5511977019749/?t=Ol%C3%A1,%20vim%20pelo%20site%20da%20biblioteca%20e%20queria%20ter%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20livros" target="_blank"><i class='bx  bx-phone'  style='color:#030303'></i> </i> Whatsapp: (11) 97001-9749</a>
+        <a href="https://www.google.com/maps/dir//Av.+Bom+Clima,+556+-+Jardim+Bom+Clima,+Guarulhos+-+SP,+07196-220/@-23.4510545,-46.6002054,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94cef5309668258d:0xb4d29156950f5cd8!2m2!1d-46.517881!2d-23.4511462?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank"><i class='bxr  bx-location-alt'  style='color:#030303'></i> Endereço: Av. Bom Clima, 556 - Jardim Bom Clima, Guarulhos - SP, 07196-220
+        </a>
+    </dialog>
+
+    <footer class="footer">
+        <p>&copy; Biblioteca. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+</html>
