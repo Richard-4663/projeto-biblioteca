@@ -88,7 +88,7 @@ nav .links {
     text-align: center;
     transition: 0.3s;
     border: 1px solid black;
-    background-image: url(/Imgs/card_img.jpg);
+    background-image: url(projeto-biblioteca/Imgs/card_img.jpg);
     background-size: cover;
     color: white;
 }
